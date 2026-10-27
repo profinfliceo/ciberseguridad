@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mvqkaw6u-e5qd80ncz">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>5.1.Técnicas de búsqueda de información | Sombreros Negros vs Sombreros Blancos</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="REA de la asignatura de Creación Digital y Pensamiento Computacional para 1º de BACHILLERATO sobre ciberseguridad">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<script src="../libs/exe_tooltips/exe_tooltips.js"> </script>
+<script src="../libs/exe_tooltips/jquery.qtip.min.js"> </script>
+<script src="../libs/exe_tooltips/imagesloaded.pkg.min.js"> </script>
+<link rel="stylesheet" href="../libs/exe_tooltips/jquery.qtip.min.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mvqkaw6u-e5qd80ncz" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch"> Sombreros Blancos VS Sombreros Negros</a>
+</li>
+<li> <a href="../html/1-presentacion.html" class="no-ch">1. Presentación</a>
+</li>
+<li> <a href="../html/2-victimas-de-un-ciberataque.html" class="no-ch">2. Víctimas de un ciberataque</a>
+</li>
+<li> <a href="../html/3-contrasenas-y-antivirus.html" class="daddy">3. Contraseñas y antivirus</a>
+<ul class="other-section">
+<li> <a href="../html/31-tu-contrasena-no-es-segura.html" class="no-ch">3.1. Tu contraseña no es segura</a>
+</li>
+<li> <a href="../html/32-virus-troyanos-y-gusanos.html" class="no-ch">3.2. Virus, troyanos y gusanos</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/4-quiero-ser-un-hacker.html" class="daddy">4. Quiero ser un Hacker</a>
+<ul class="other-section">
+<li> <a href="../html/41-hacking-etico.html" class="no-ch">4.1. Hacking ético</a>
+</li>
+<li> <a href="../html/42-tipos-de-ataques.html" class="no-ch">4.2. Tipos de ataques</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/5-tecnicas-de-pentesting.html" class="daddy">5. Técnicas de Pentesting</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/51tecnicas-de-busqueda-de-informacion.html" class="active no-ch">5.1.Técnicas de búsqueda de información</a>
+</li>
+<li> <a href="../html/52-pruebas-de-pentesting.html" class="no-ch">5.2. Pruebas de Pentesting</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/6-vulnerabilidades-en-sistemas.html" class="daddy">6. Vulnerabilidades en sistemas</a>
+<ul class="other-section">
+<li> <a href="../html/61-ingenieria-social.html" class="no-ch">6.1. Ingeniería social</a>
+</li>
+<li> <a href="../html/62-atacamos-un-equipo.html" class="no-ch">6.2. Atacamos un equipo</a>
+</li>
+<li> <a href="../html/63-analisis-de-riesgos.html" class="daddy">6.3. Análisis de riesgos</a>
+<ul class="other-section">
+<li> <a href="../html/631-medidas-de-proteccion.html" class="no-ch">6.3.1 Medidas de protección</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/7-analisis-forense.html" class="daddy">7. Análisis forense</a>
+<ul class="other-section">
+<li> <a href="../html/71-herramientas-y-tecnicas-de-analisis.html" class="no-ch">7.1. Herramientas y técnicas de análisis</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/8-ciberdelitos.html" class="daddy">8. Ciberdelitos</a>
+<ul class="other-section">
+<li> <a href="../html/81-repercusiones-legales.html" class="no-ch">8.1. Repercusiones legales</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/9-nuestro-informe-final.html" class="no-ch">9. Nuestro informe final</a>
+</li>
+<li> <a href="../html/10-presentamos-nuestro-trabajo.html" class="no-ch">10. Presentamos nuestro trabajo</a>
+</li>
+<li> <a href="../html/11-sacamos-conclusiones.html" class="no-ch">11. Sacamos conclusiones</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">Créditos</a>
+</li>
+</ul>
+</nav><main id="page-mvqkaw6u-e5qd80ncz" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">11</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">25</strong></span></p>
+
+<div class="package-header"><p class="package-title">Sombreros Negros vs Sombreros Blancos</p></div>
+<div class="page-header"><h1 class="page-title">5.1.Técnicas de búsqueda de información</h1></div>
+</header><div id="page-content-page-mvqkaw6u-e5qd80ncz" class="page-content">
+<article id="block-mvqkaw6y-8aymm5jzn" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_rep_lee.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">1. ¿En qué consiste la Information gathering?</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6y-mj8myesht" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;"><span style="font-size: 12pt;"><strong><img src="../content/resources/retor_adultos_movimientoboca_largo.gif" alt="Retor" title="Retor" style="float: left; margin-right: 15px; margin-left: 15px;" width="250" height="250">Information gathering</strong> es el acto de recopilar diferentes tipos de información contra la víctima o el sistema objetivo. Este es el primer paso o la etapa inicial de Ethical Hacking. “Information Gathering” (también llamada “<strong>footprinting</strong>”) es una táctica habitual llevada a cabo por los ciberdelincuentes como paso previo al ataque a una entidad.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"> Consiste en recabar la máxima cantidad de información posible de fuentes abiertas (buscadores, redes sociales, sitios web públicos con contenido filtrado o recopilado…). Dicha información permite al atacante elaborar un “perfil” de su objetivo, aumentando así las probabilidades de éxito. De hecho, un atacante empleará el 90% de su tiempo en detallar un buen perfil de su objetivo y un 10% en lanzar el ataque.</span></p>
+<p><span style="font-size: 12pt;">Fases:</span><br>• <strong>Pasivo</strong>: Cuando hablamos de Information Gathering pasivo nos referimos a aquellos datos que podemos conseguir de la organización a auditar sin tener que interactuar con ella directamente. <br>• <strong>Activo:</strong> En el caso de la recolección de datos activa, interactuamos directamente con la organización, por ej. al realizar un escaneo .</p>
+<p>Son muchas las herramientas, técnicas y recursos disponibles que cumplen con este propósito.<br>Estas son algunas de ellas:</p>
+<ul>
+<li>Google Hacking.</li>
+<li>Whois, Nslookup.</li>
+<li>Metadatos.</li>
+<li>Ingeniería Social.</li>
+<li>Igualmente existen herramientas automatizadas para recolectar todo tipo de información.</li>
+</ul></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mvqkaw6y-kq3fnyimu" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_exp_competenciadigital.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">2. Google Hacking </h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6y-q8iehv0m1" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Cuando se realiza una búsqueda en Google, hay ciertas palabras clave y operadores que se utilizan para filtrar los resultados.</p>
+<p>Una persona con fines malintencionados puede utilizar estas mismas técnicas para obtener información sensible, y esto es lo que se conoce como “<strong>Google Dorks</strong>” o “<strong>Google Hacking</strong>”.</p>
+<p><strong>Ejemplo 1:</strong> Introduce en la barra de búsqueda de Google el siguiente dorks:</p>
+<p><img src="../content/resources/Dork1.PNG" alt="Dork1" title="Dork1" style="vertical-align: middle;" width="852" height="161"></p>
+<p>intitle:”webcamXP 5″</p>
+<p>Entra en varios de los enlaces.</p>
+<p>¿Cuál es el resultado de la búsqueda?</p>
+<p>¿Cuántos resultados has obtenido?</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2><span class="sr-av">Clavis dice </span>¿Qué es lo que he conseguido?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Ahora para un poco y piensa en <strong>todo lo que has aprendido</strong> durante la realización de las tareas que has realizado ¡Ha sido increíble!</p>
+<p>Para seguir <strong>avanzando</strong> en este aprendizaje tan apasionante, te presento el siguiente dork que será una <strong>estrategia</strong> muy <strong>útil</strong> para ti. Con este dork se pueden encontrar cámaras web modelo “WebcamXP 5” que están transmitiendo en vivo y que no tienen ningún tipo de restricción de acceso por IP (whitelist) o que no requieren autenticación.</p>
+<p>Para más información puedes ver hacer <a href="https://www.uv.mx/personal/clelanda/files/2013/03/Aprender-a-buscar-en-Google.pdf" target="_blank" title="Accede a la web aprender a buscar con google" rel="noopener">clic aquí</a> para aprender a buscar con Google.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mvqkaw6y-ab6dyij90" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_exp_competenciadigital.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">3. Búsqueda con Whois</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6y-ozyek9ehj" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;"><strong><img src="../content/resources/whois.png" alt="Captura de imagen de Centralops.net sobre el protocolo whois" title="Whois" style="float: left; margin-right: 15px; margin-left: 15px;" width="500" height="314">Whois</strong>&nbsp;es un protocolo&nbsp;TCP&nbsp;el cual suministra información publica que permite determinar el <strong>propietario de un nombre de dominio o de una IP</strong>, esta información involucra&nbsp;clientes y empresa proveedora. Esta herramienta puede ser usada a través de la consola o bien de diversas paginas web que ofrecen la herramienta en modo online.</p>
+<p style="text-align: justify;">Accede a alguna de las siguientes páginas&nbsp; en el navegador y busca el dominio de tu centro educativo o cualquier otro que te indique tu profesor o profesora.</p>
+<p><a href="https://centralops.net/co/" target="_blank" title="Accede a la página web centralops.net" rel="noopener">- centralops.net/co/</a></p>
+<p><a href="https://www.dondominio.com/whois/" target="_blank" title="Accede a la web dondominio.com" rel="noopener">- dondominio.com/whois/</a></p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mvqkaw6y-f8fc1rup6" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_exp_actividad.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">4. Tracerroute</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6y-5g9nctuf0" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;"><strong>Tracert</strong> es una aplicación nativa de Windows, sólo que en vez de ejecutarse con una interfaz gráfica, se ejecuta directamente en cualquiera de las dos consolas del sistema, tanto en el Símbolo de sistema como en Windows PowerShell. También se le conoce como <strong>Traceroute</strong> porque este es el nombre que recibe esta función en GNU/Linux, UNIX y Mac.</p>
+<p style="text-align: justify;">Sirve para <strong>trazar la ruta</strong> que hace un paquete entrante que viene desde un host o punto de red hasta tu ordenador.</p>
+<p><img src="../content/resources/tracert.png" alt="Captura de pantalla de la app de windows Tracert" title="Tracert" style="vertical-align: middle; display: block; margin: 10px auto;" width="800" height="283"></p>
+<p style="text-align: justify;">Se trata de una <strong>herramienta de diagnóstico de red</strong>, ya que cuando envías estos paquetes obtienes estadísticas del<strong> <a href="#td131ca28-0350-ca0b-485e-71586e281f01" id="linkd131ca28-0350-ca0b-485e-71586e281f01" class="exe-tooltip definition-tt titled-tt shadowed-tt" title="RTT | Accede la definición de RTT">RTT</a></strong> o la latencia de red. Además, también te va a ir dando la dirección IP de cada uno de los nodos por los que va pasando el paquete hasta llegar a su destino.</p>
+<p>Vamos a aplicarlo:</p>
+<p>Lo único que tienes que hacer para utilizar este comando en su función básica es abrir el Símbolo de sistema o Windows PowerShell en tu ordenador el una terminal (cmd.exe).</p>
+<p>Una vez en él, escribe el comando <strong>tracert</strong>&nbsp; <em>"nombre del dominio o IP"</em><nombre dominio="" o="" ip="">, poniendo en <nombre dominio="" o="" ip=""> la dirección a la que quieras enviar los datos de prueba.</nombre></nombre></p>
+<p>Utiliza el dominio de tu centro u otro que te indique el profesor o profesora.</p>
+<ul>
+<li>En los sistemas <strong>UNIX/Linux</strong>, el comando Traceroute es el siguiente:</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;traceroute -4 nombre.del.equipo</p>
+<ul>
+<li>&nbsp;En los sistemas <strong>Windows</strong> el comando Traceroute es:</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tracert -4 nombre.del.equipo</p>
+<p><br>El -4 es para forzar IPv4 y ver las direcciones IP de los nodos.</p>
+<div id="td131ca28-0350-ca0b-485e-71586e281f01" class="exe-tooltip-text">
+<p>El tiempo de ida y vuelta (RTT, round-trip time o round-trip delay time) se aplica en el mundo de las telecomunicaciones y redes informáticas al tiempo que tarda un paquete de datos enviado desde un emisor en volver a este mismo emisor habiendo pasado por el receptor de destino.</p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Clavis dice </span>¿Cómo funciona?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Verás que lo primero que hace el comando al ser ejecutado es mostrar la <strong>dirección IP</strong> real del dominio de la web que hayas elegido.</p>
+<p>Luego, te irá diciendo uno a uno todos los nodos y routers por los que pasa el mensaje de prueba que has enviado, sus direcciones IP y la latencia de cada uno de ellos hasta llegar a su destino.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mvqkaw6y-qdua2veka" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_rep_conocer.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">5. El comando Ping</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6y-ws31pehj2" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Ping es una utilidad diagnóstica en redes de computadoras que comprueba el estado de la conexión del host local con uno o varios equipos remotos de una red <a href="https://es.wikipedia.org/wiki/Modelo_TCP/IP" target="_blank" title="Accede a wikipedia para saber más sobre una red TCP/IP" rel="noopener">TCP/IP</a> por medio del envío de paquetes <a href="https://es.wikipedia.org/wiki/Protocolo_de_control_de_mensajes_de_Internet" target="_blank" title="Accede a la wikipedia para saber más sobre el envío de paquetes ICMP" rel="noopener">ICMP</a> de solicitud y de respuesta. Mediante esta utilidad puede diagnosticarse el estado, velocidad y calidad de una red determinada.</p>
+<p>¿Cómo ejecutar el <strong>comando PING</strong>?</p>
+<p>Para ejecutar el comando ping en su forma más elemental utiliza:&nbsp;<strong>PING dirección_ip</strong><br>Por ejemplo:&nbsp; <strong>ping 192.168.1.100</strong></p>
+<p><strong>En una red es útil conocer los siguientes datos:</strong></p>
+<p>Dirección IP del equipo: por ejemplo&nbsp; 192.168.1.3<br>Dirección IP de otra PC en la misma red: 192.168.1.X&nbsp; donde&nbsp; X puede ser cualquier valor entre 2 y 254<br>Puerta de enlace (normalmente es la IP del Router): en esta red 192.168.1.1<br>Las direcciones IP anteriores es posible conocerlas utilizando el comando&nbsp;IPCONFIG (ifconfig en Linux) en el terminal:</p>
+<p><img src="../content/resources/ipconfig.png" alt="Captura de imagen del comando ipconfig de Linux" title="ipconfig" style="display: block; margin-left: auto; margin-right: auto;" width="800" height="461"></p>
+<p><strong>¿Cómo se utiliza?</strong></p>
+<div class="exe-fx exe-paginated">
+<h2>1. Hacer ping a 127.0.0.1</h2>
+<p><span style="background-color: #ffffff; font-size: 16.8px;">Hacer ping a 127.0.0.1, es la <strong>dirección localhost</strong> o <strong>dirección de loopback</strong> de nuestro mismo equipo, en caso de tener éxito demuestra que el protocolo TCP/IP está instalado y funcionando de forma correcta. De no ser así es necesario reinstalarlo.</span></p>
+<h2>2. Hacer ping a la dirección IP del equipo:&nbsp;ping 192.168.1.3.</h2>
+<span style="font-size: 16.8px; background-color: #ffffff;">De tener éxito demuestra que la tarjeta o adaptador de red funciona correctamente</span><span style="background-color: #ffffff; font-size: 16.8px;">.</span><span style="background-color: #ffffff; font-size: 16.8px;"></span>
+<h2>3. Hacer ping a la dirección IP del otro equipo en red:&nbsp;ping 192.168.1.5</h2>
+De tener éxito demuestra que la tarjeta o adaptador de red funciona correctamente y el equipo está encendido y operativo.
+<h2>4. Hacer ping a la dirección IP de la puerta de enlace:&nbsp;ping 192.168.1.1</h2>
+De tener éxito demuestra que existe conexión con el equipo que suministra internet.<br>
+<h2>5. Hacer ping a la dirección IP de un sitio en internet:&nbsp;ping 209.190.61.3&nbsp;(Dirección IP de este sitio web).</h2>
+De tener éxito demuestra que la conexión a internet funciona y el equipo remoto está encendido.<br>
+<h2>6. Por ultimo hacer ping a un dominio en internet:&nbsp;ping google.com</h2>
+De tener éxito demuestra que existe conexión a internet y los servidores DNS configurados en la conexión funcionan correctamente.</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mvqkaw6y-e2fqn31y4" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_exp_competenciadigital.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">6. Comando Ping</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6y-1uqhgbwvz" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="../content/resources/ping.png" alt="Ping" title="Ping" style="float: left; margin-right: 15px; margin-left: 15px;" width="400" height="240"></p>
+<p style="text-align: justify;">Utiliza el comando ping para sacar información de la red:</p>
+<p style="text-align: justify;">1.- Usa ipconfig o ifconfig para obtener la dirección IP de tu ordenador y la IP del Router.</p>
+<p style="text-align: justify;">2.- Realiza&nbsp;un ping a la dirección IP del equipo de algún compañero o compañera.</p>
+<p style="text-align: justify;">3.- Ping a la dirección IP de la puerta de enlace de la red.</p>
+<p style="text-align: justify;">4.- Ping a la web de tu centro u otro en internet: ping <em>dominio del centro.es</em></p>
+<p style="text-align: justify;">5.- Tras hacer ping al dominio obtendrás la IP del servidor, realiza ahora un ping a esa IP obtenida.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mvqkaw6y-yop2gtmpu" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_rep_conocer.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">7. ¿Qué son los Certificados de seguridad?</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6y-dw7at33cl" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main">
+<div class="exe-fx exe-tabs">
+<h2>SSL (Secure Sockets Layer)</h2>
+<p>Un certificado SSL <strong>se instala en el servidor</strong> pero muestra indicaciones visuales en el navegador, lo que indica a los usuarios que se encuentran protegidos con SSL. Para empezar, si en el sitio está presente SSL, los usuarios verán <strong>https://</strong> al principio de la dirección web en lugar de http:// (la "s" extra significa "seguro"). Dependiendo del nivel de validación que un certificado otorga a un negocio, una conexión segura puede mostrarse a través de la presencia de un icono de un candado o una barra de direcciones con una señal verde.</p>
+<p>&nbsp;Google aboga ahora por que HTTPS o SSL se usen en toda la red y, desde el año 2014, el motor de búsqueda ha recompensado los sitios web seguros con&nbsp;posiciones mejoradas en la web, otra buena razón para que cualquier sitio instale SSL.</p>
+<h2>TLS (Transport Layer Security)</h2>
+<p>El protocolo TLS ( seguridad de la capa de transporte) es el protocolo sucesor de SSL. <strong>TLS es una versión mejorada de SSL</strong>. Funciona de un modo muy parecido a SSL, utilizando cifrado que protege la transferencia de datos e información. Los dos términos se utilizan con frecuencia indistintamente en la industria, aunque el término SSL sigue siendo el término mayoritario. Cuando usted compra un certificado SSL de DigiCert, puede utilizarlo tanto con protocolos SSL como TLS.</p>
+<h2>¿Si no uso certificados o están obsoletos?</h2>
+<p>Un ciberdelincuente podría robar la información confidencial de los usuarios, ya que los protocolos utilizados no están protegidos o cuentan con fallos de seguridad públicos.</p>
+<p>Los navegadores web marcarán el sitio web como no seguro. Esto hará que los usuarios cuando accedan a la web vean un mensaje alertándoles e indicándoles que los datos que introduzcan pueden ser capturados por ciberdelincuentes.</p>
+</div>
+<p><img src="../content/resources/barra.PNG" alt="Barra de direcciones" title="Barra de direcciones" style="vertical-align: middle;" width="248" height="35">&nbsp;</p>
+<p><strong> ¿Cuál es el significado de los pequeños iconos que acompañan a la URL?</strong></p>
+<div class="exe-fx exe-accordion">
+<h2>&nbsp;<img src="../content/resources/candado.png" alt="Candado" width="18" height="18"> Es seguro</h2>
+<p>La información que envías o recibes a través del sitio web <strong>es privada</strong>.</p>
+<p>Aunque veas este icono, debes tener precaución al compartir información privada. Comprueba la barra de direcciones para asegurarte de que estás en el sitio web que quieres visitar.</p>
+<h2><img src="../content/resources/info.png" alt="Información" width="18" height="18">&nbsp;Información o No es seguro</h2>
+<p>El sitio web <strong>no utiliza una conexión privada</strong>. Es posible que otro usuario pueda ver o cambiar la información que envías o recibes a través de este sitio web.&nbsp;</p>
+<p>Algunos sitios web te permiten visitar una versión más segura de la página:</p>
+<p>Selecciona la barra de direcciones.<br>Sustituye&nbsp;http://&nbsp;por&nbsp;https://.<br>Si esto no funciona, ponte en contacto con el propietario del sitio web en cuestión para solicitar que aumente la seguridad de su sitio y la de tus datos con el protocolo HTTPS.</p>
+<h2><img src="../content/resources/peligroso.png" alt="Peligroso" width="18" height="18">&nbsp;No es seguro o Peligroso</h2>
+<p>Te recomendamos que no introduzcas información personal ni privada en esta página. Si es posible, no utilices este sitio web.</p>
+<p><strong>No es seguro:</strong> ve con cuidado. La conexión de este sitio web tiene algún problema grave de privacidad. Es posible que otro usuario pueda ver la información que envías o recibes a través de este sitio.</p>
+<p>Puede aparecer el mensaje "Inicio de sesión no seguro" o "Pago no seguro".</p>
+<p><strong>Peligroso:</strong> evita este sitio web. Si aparece una pantalla de advertencia de color rojo que ocupa toda la página, significa que la función Navegación Segura ha marcado el sitio web como no seguro. Es muy probable que tu información privada corra peligro al utilizarlo.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mvqkaw6y-hh8famlfo" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/interactive.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">8. Pon a prueba tus conocimientos.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6y-ttlripior" class="idevice_node form db-no-data" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;questionsData&quot;:[{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;strong&gt;!! IMPORTANTE¡¡ Pon mucha atención pues sólo tendrás una oportunidad&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;1.- El acto de recopilar diferentes tipos de información contra la víctima o el sistema objetivo de llama information gathering o ...&lt;/strong&gt;&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Hacking ético&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Pentesting&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Información gathering&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Footprinting&quot;}]},{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;strong&gt;2.- Cuando obtenemos datos de una organización interactuando directamente sobre sus equipos se llama...&lt;/strong&gt;&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Gathering pasivo&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Gathering activo&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Pentesting directo&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Hacking blackhats&quot;}]},{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;strong&gt;3.- Cuando antes de la URL de una web aparece el icono &lt;img src=\&quot;../content/resources/candado.png\&quot; alt=\&quot;Candado\&quot; title=\&quot;Candado\&quot; width=\&quot;18\&quot; height=\&quot;18\&quot; /&gt; , quiere indicarnos...&lt;/strong&gt;&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Que la web está bloqueada por problemas de seguridad.&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Existe una versión más segura de esa web con HTTPS.&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Que la información que envías o recibes a través del sitio web es privada. Es una web segura.&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Que utiliza un certificado SSL poco seguro o inadecuado.&quot;}]},{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;strong&gt;4- Marca la respuesta correcta respecto al certificado SSL.&lt;/strong&gt;&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Se instala en el navegador, lo que indica a los usuarios que se encuentran protegidos con SSL.&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Se instala en el servidor pero muestra indicaciones visuales en el navegador, lo que indica a los usuarios que se encuentran protegidos con SSL&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Si en el sitio está presente SSL, los usuarios verán http:// pero estarán protegidos por el certificado.&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;TLS es una versión más antigua del certificado SSL.&quot;}]},{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;strong&gt;5.- Marca la información que no podemos obtener mediante un análisis de verificación de certificados.&lt;/strong&gt;&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;La dirección IP del servidor.&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Tipo de clave de cifrado.&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Versión de protocolo TLS que utiliza.&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Propietario del dominio y fecha de renovación.&quot;}]}],&quot;checkAddBtnAnswers&quot;:true,&quot;userTranslations&quot;:{&quot;langTrueFalseHelp&quot;:&quot;Select whether the statement is true or false&quot;,&quot;langDropdownHelp&quot;:&quot;Choose the correct answer among the options proposed&quot;,&quot;langSingleSelectionHelp&quot;:&quot;Multiple choice with only one correct answer&quot;,&quot;langMultipleSelectionHelp&quot;:&quot;Multiple choice with multiple corrects answers&quot;,&quot;langFillHelp&quot;:&quot;Fill in the blanks with the appropriate word&quot;},&quot;dropdownPassRate&quot;:&quot;50&quot;}" data-idevice-template="form.html">
+
+</div>
+</div>
+</article><article id="block-mvqkaw6y-ynznwzw4e" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_exp_competenciadigital.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">9. Comprobamos los certificados.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6y-4l97ij8gv" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Para comprobar los certificados de una web, además de la información visual de los iconos y el HTTPS, podemos señalar al menos 3 herramientas de verificación de certificados que aportan gran información extra al hacker en su trabajo:</p>
+<ul>
+<li><a href="https://decoder.link" target="_blank" title="Accede a la web https://decoder.link" rel="noopener">https://decoder.link</a></li>
+<li><a href="https://www.ssllabs.com/ssltest/index.html" target="_blank" title="Accede a la web https://www.ssllabs.com/ssltest/index.html" rel="noopener">https://www.ssllabs.com/ssltest/index.html</a></li>
+<li><a href="https://ssltools.digicert.com/checker/views/checkInstallation.jsp" target="_blank" title="Accede a la web https://ssltools.digicert.com/checker/views/checkInstallation.jsp" rel="noopener">https://ssltools.digicert.com/checker/views/checkInstallation.jsp</a></li>
+</ul>
+<p><strong>¡Vamos a investigar un poco!</strong></p>
+<p>Utiliza una de ellas. por ejemplo la segunda de las direcciones, para obtener un <strong>informe SSL</strong> sobre la web de tu instituto u otras webs que te indique tu profesor o profesora.</p>
+<p>Sólo tienes que introducir el dominio y esperar que finalice el análisis.</p>
+<p>Obtendrás algo parecido a esto, seguido de un informe mucho más extenso:</p>
+<figure class="exe-figure exe-image position-center" style="width: 200px; text-align: center;"><a href="../content/resources/scanweb.PNG" rel="lightbox" title="Análisis de una Web"><img src="../content/resources/scanweb.PNG" alt="Clic para aumentar" title="Análisis web" style="vertical-align: middle; margin: 10px;" width="200" vspace="10" hspace="10" height="100"></a>
+<figcaption class="figcaption"><span class="title" style="font-size: 10pt;"><em>Clic para aumentar</em></span></figcaption>
+</figure></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Qué información puedo obtener?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="feedback js-feedback js-hidden" role="status" style="display: block;">
+<p>De este análisis puedes obtener entre otras cosas:</p>
+<ul>
+<li>La dirección IP del servidor.</li>
+<li>La&nbsp; calificación general de seguridad de su certificado&nbsp; de A (la más alta).</li>
+<li>Cuando caducan estos certificados.</li>
+<li>Tipo de clave de cifrado.</li>
+<li>Algoritmo de firma.</li>
+<li>Protocolo TLS que utiliza (debe ser superior a TLS 1.2).</li>
+</ul>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/5-tecnicas-de-pentesting.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/52-pruebas-de-pentesting.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

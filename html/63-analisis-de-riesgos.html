@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mvqkaw6u-opypu8rmq">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>6.3. Análisis de riesgos | Sombreros Negros vs Sombreros Blancos</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="REA de la asignatura de Creación Digital y Pensamiento Computacional para 1º de BACHILLERATO sobre ciberseguridad">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mvqkaw6u-opypu8rmq" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch"> Sombreros Blancos VS Sombreros Negros</a>
+</li>
+<li> <a href="../html/1-presentacion.html" class="no-ch">1. Presentación</a>
+</li>
+<li> <a href="../html/2-victimas-de-un-ciberataque.html" class="no-ch">2. Víctimas de un ciberataque</a>
+</li>
+<li> <a href="../html/3-contrasenas-y-antivirus.html" class="daddy">3. Contraseñas y antivirus</a>
+<ul class="other-section">
+<li> <a href="../html/31-tu-contrasena-no-es-segura.html" class="no-ch">3.1. Tu contraseña no es segura</a>
+</li>
+<li> <a href="../html/32-virus-troyanos-y-gusanos.html" class="no-ch">3.2. Virus, troyanos y gusanos</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/4-quiero-ser-un-hacker.html" class="daddy">4. Quiero ser un Hacker</a>
+<ul class="other-section">
+<li> <a href="../html/41-hacking-etico.html" class="no-ch">4.1. Hacking ético</a>
+</li>
+<li> <a href="../html/42-tipos-de-ataques.html" class="no-ch">4.2. Tipos de ataques</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-tecnicas-de-pentesting.html" class="daddy">5. Técnicas de Pentesting</a>
+<ul class="other-section">
+<li> <a href="../html/51tecnicas-de-busqueda-de-informacion.html" class="no-ch">5.1.Técnicas de búsqueda de información</a>
+</li>
+<li> <a href="../html/52-pruebas-de-pentesting.html" class="no-ch">5.2. Pruebas de Pentesting</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/6-vulnerabilidades-en-sistemas.html" class="daddy">6. Vulnerabilidades en sistemas</a>
+<ul class="other-section">
+<li> <a href="../html/61-ingenieria-social.html" class="no-ch">6.1. Ingeniería social</a>
+</li>
+<li> <a href="../html/62-atacamos-un-equipo.html" class="no-ch">6.2. Atacamos un equipo</a>
+</li>
+<li class="active"> <a href="../html/63-analisis-de-riesgos.html" class="active daddy">6.3. Análisis de riesgos</a>
+<ul class="other-section">
+<li> <a href="../html/631-medidas-de-proteccion.html" class="no-ch">6.3.1 Medidas de protección</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/7-analisis-forense.html" class="daddy">7. Análisis forense</a>
+<ul class="other-section">
+<li> <a href="../html/71-herramientas-y-tecnicas-de-analisis.html" class="no-ch">7.1. Herramientas y técnicas de análisis</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/8-ciberdelitos.html" class="daddy">8. Ciberdelitos</a>
+<ul class="other-section">
+<li> <a href="../html/81-repercusiones-legales.html" class="no-ch">8.1. Repercusiones legales</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/9-nuestro-informe-final.html" class="no-ch">9. Nuestro informe final</a>
+</li>
+<li> <a href="../html/10-presentamos-nuestro-trabajo.html" class="no-ch">10. Presentamos nuestro trabajo</a>
+</li>
+<li> <a href="../html/11-sacamos-conclusiones.html" class="no-ch">11. Sacamos conclusiones</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">Créditos</a>
+</li>
+</ul>
+</nav><main id="page-mvqkaw6u-opypu8rmq" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">16</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">25</strong></span></p>
+
+<div class="package-header"><p class="package-title">Sombreros Negros vs Sombreros Blancos</p></div>
+<div class="page-header"><h1 class="page-title">6.3. Análisis de riesgos</h1></div>
+</header><div id="page-content-page-mvqkaw6u-opypu8rmq" class="page-content">
+<article id="block-mvqkaw6z-szdfb3plr" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6z-p7ldg2hco" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;"><img src="../content/resources/retor_adultos_conbocadillo.gif" alt="Retor" title="Retor" width="250" height="250" style="float: left; margin-right: 15px; margin-left: 15px;">¿Has pensado alguna vez en lo que ocurriría en una empresa si, de repente, perdiese la información de su negocio o la capacidad de acceder a ella? eso es lo que ocurre por ejemplo con un ataque de ransomware.&nbsp; Todas las empresas están expuestas a amenazas que ni siquiera imaginan.</p>
+<p style="text-align: justify;">Cuando se habla de ciberseguridad, el&nbsp;análisis de riesgos informáticos&nbsp;es la&nbsp;evaluación de los&nbsp;distintos peligros que afectan a nivel informático&nbsp;y que pueden producir situaciones de amenaza al negocio, como robos o intrusiones que comprometan los datos o ataques externos que impidan el funcionamiento de los sistemas propiciando periodos de inactividad empresarial.&nbsp;</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mvqkaw6z-sp6r8i016" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_rep_lee.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">1. Tipos de amenazas</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6z-43drro5ik" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Tras identificar todos los&nbsp;activos de información que componen la empresa como software, hardware, vías de comunicación, documentación digital, etc,&nbsp; deben definirse las amenazas a las que pueden estar expuestos. Estas amenazas pueden ser de diferente índole:</p>
+<div class="exe-fx exe-accordion">
+<h2>Ataques externos</h2>
+<p>Dos de las mayores&nbsp;amenazas que reciben las empresas&nbsp;hoy en día son ataques de denegación de servicio&nbsp;<strong>DDoS</strong>&nbsp;(inutilizan los sistemas informáticos de la empresa) o&nbsp;ataques con malware de tipo&nbsp;<strong>ransomware&nbsp;</strong>(encriptan los datos de la empresa, solicitando un rescate económico en criptomonedas para liberarlos).&nbsp;</p>
+<h2>Errores humanos</h2>
+<p>La intervención humana en los procesos informáticos siempre está expuesta a que se cometan errores (<strong>intencionados o no intencionados</strong>).</p>
+<h2>Desastres naturales</h2>
+<p>Es posible que se den situaciones que pongan en peligro los activos informáticos de la empresa como <strong>inundaciones o sobrecargas</strong> en la red eléctrica.&nbsp;</p>
+<h2>Situaciones extraordinarias, como la pandemia del COVID-19</h2>
+<p>Las crisis a menudo reducen los niveles de alerta y protección y llevan a los ciberdelincuentes a aprovecharse de esta situación operando bajo esquemas maliciosos. Por ejemplo, las&nbsp;campañas de <strong>phishing</strong>&nbsp;relacionadas con el COVID-19, en las que los cibercriminales se hacen pasar, por ejemplo, por organizaciones de salud acreditadas están en aumento.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mvqkaw6z-apu6ml5eg" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_exp_coproducciontxt.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">2. Analizamos una empresa.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6z-cp2tvhbsi" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Visualiza los siguientes vídeos y con la información obtenida, realiza con tu compañero o compañera una <strong>recopilación de las medidas de seguridad</strong> que Juan va implementando con los consejos del “<strong>Locutor</strong>”:<br><br></p>
+<p style="text-align: center;"><iframe src="https://www.youtube.com/embed/EHjmxujXIaQ" allowfullscreen="allowfullscreen" width="560" height="314" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+<figure class="exe-figure exe-media position-center license-CC-BY-NC-SA" style="width: 560px; text-align: center;"><iframe src="https://www.youtube.com/embed/kW6RpKSo7xQ" allowfullscreen="allowfullscreen" width="560" height="314" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<figcaption class="figcaption"></figcaption>
+</figure>
+<figure class="exe-figure exe-media position-center license-CC-BY-NC-SA" style="width: 560px; text-align: center;"><iframe src="https://www.youtube.com/embed/o9IzWE8h2RQ" allowfullscreen="allowfullscreen" data-mce-fragment="1" width="560" height="314" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<figcaption class="figcaption"></figcaption>
+</figure>
+<figure class="exe-figure exe-media position-center license-CC-BY-NC-SA" style="width: 560px; text-align: center;"><iframe src="https://www.youtube.com/embed/rPfZ5EPnle4" allowfullscreen="allowfullscreen" data-mce-fragment="1" width="560" height="314" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<figcaption class="figcaption"></figcaption>
+</figure></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>Conoce tus riesgos</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Para ayudar a las empresas a evaluar su estado de ciberseguridad y a avanzar hacia mayores niveles de protección INCIBE pone a su disposición una herramienta de autodiagnóstico especialmente diseñada para este fin. A través de una serie de preguntas se guiará al usuario para que determine su estado en seguridad de la información, qué riesgos amenazan el funcionamiento de la empresa y qué aspectos debe mejorar. Todo ello, para empezar a medir. Para empezar a mejorar.</p>
+<p>De acuerdo con la información de los vídeos anteriores, utiliza esta herramienta de autodiagnóstico y realiza el test en la web <a href="https://adl.incibe.es/" target="_blank" title="Accede a la web de incibe para calcular el riesgo de tu negocio" rel="noopener"> adl.incibe.es/</a></p>
+<p><strong>Captura el resultado final.</strong></p></div></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/62-atacamos-un-equipo.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/631-medidas-de-proteccion.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

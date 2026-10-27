@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mvqkaw6u-khdsl82l8">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>6. Vulnerabilidades en sistemas | Sombreros Negros vs Sombreros Blancos</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="REA de la asignatura de Creación Digital y Pensamiento Computacional para 1º de BACHILLERATO sobre ciberseguridad">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mvqkaw6u-khdsl82l8" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch"> Sombreros Blancos VS Sombreros Negros</a>
+</li>
+<li> <a href="../html/1-presentacion.html" class="no-ch">1. Presentación</a>
+</li>
+<li> <a href="../html/2-victimas-de-un-ciberataque.html" class="no-ch">2. Víctimas de un ciberataque</a>
+</li>
+<li> <a href="../html/3-contrasenas-y-antivirus.html" class="daddy">3. Contraseñas y antivirus</a>
+<ul class="other-section">
+<li> <a href="../html/31-tu-contrasena-no-es-segura.html" class="no-ch">3.1. Tu contraseña no es segura</a>
+</li>
+<li> <a href="../html/32-virus-troyanos-y-gusanos.html" class="no-ch">3.2. Virus, troyanos y gusanos</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/4-quiero-ser-un-hacker.html" class="daddy">4. Quiero ser un Hacker</a>
+<ul class="other-section">
+<li> <a href="../html/41-hacking-etico.html" class="no-ch">4.1. Hacking ético</a>
+</li>
+<li> <a href="../html/42-tipos-de-ataques.html" class="no-ch">4.2. Tipos de ataques</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-tecnicas-de-pentesting.html" class="daddy">5. Técnicas de Pentesting</a>
+<ul class="other-section">
+<li> <a href="../html/51tecnicas-de-busqueda-de-informacion.html" class="no-ch">5.1.Técnicas de búsqueda de información</a>
+</li>
+<li> <a href="../html/52-pruebas-de-pentesting.html" class="no-ch">5.2. Pruebas de Pentesting</a>
+</li>
+</ul>
+</li>
+<li class="active"> <a href="../html/6-vulnerabilidades-en-sistemas.html" class="active daddy">6. Vulnerabilidades en sistemas</a>
+<ul class="other-section">
+<li> <a href="../html/61-ingenieria-social.html" class="no-ch">6.1. Ingeniería social</a>
+</li>
+<li> <a href="../html/62-atacamos-un-equipo.html" class="no-ch">6.2. Atacamos un equipo</a>
+</li>
+<li> <a href="../html/63-analisis-de-riesgos.html" class="daddy">6.3. Análisis de riesgos</a>
+<ul class="other-section">
+<li> <a href="../html/631-medidas-de-proteccion.html" class="no-ch">6.3.1 Medidas de protección</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/7-analisis-forense.html" class="daddy">7. Análisis forense</a>
+<ul class="other-section">
+<li> <a href="../html/71-herramientas-y-tecnicas-de-analisis.html" class="no-ch">7.1. Herramientas y técnicas de análisis</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/8-ciberdelitos.html" class="daddy">8. Ciberdelitos</a>
+<ul class="other-section">
+<li> <a href="../html/81-repercusiones-legales.html" class="no-ch">8.1. Repercusiones legales</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/9-nuestro-informe-final.html" class="no-ch">9. Nuestro informe final</a>
+</li>
+<li> <a href="../html/10-presentamos-nuestro-trabajo.html" class="no-ch">10. Presentamos nuestro trabajo</a>
+</li>
+<li> <a href="../html/11-sacamos-conclusiones.html" class="no-ch">11. Sacamos conclusiones</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">Créditos</a>
+</li>
+</ul>
+</nav><main id="page-mvqkaw6u-khdsl82l8" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">13</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">25</strong></span></p>
+
+<div class="package-header"><p class="package-title">Sombreros Negros vs Sombreros Blancos</p></div>
+<div class="page-header"><h1 class="page-title">6. Vulnerabilidades en sistemas</h1></div>
+</header><div id="page-content-page-mvqkaw6u-khdsl82l8" class="page-content">
+<article id="block-mvqkaw6z-0guzsehdc" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6z-e396mkwa8" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="../content/resources/retor_adultos_conbocadillo.gif" alt="Retor" title="Rertor" width="250" height="250" style="float: left; margin-right: 15px; margin-left: 15px;">En Internet se están realizando ataques de forma continua intentando sobrepasar las medidas de seguridad de empresas, organismos estatales y particulares.</p>
+<p>¿Cuál crees que es le motivo por el que se producen estos ataques?&nbsp;<br>¿Qué información crees que buscan?</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mvqkaw6z-5tu98g9sc" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_exp_debate.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">1. Analizamos los ataques</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mvqkaw6z-yvblf9omg" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: left;">En esta página web <a href="https://cybermap.kaspersky.com/es" target="_blank" title="Accede a la web cybermap.kaspersky.com del globo planetario con las ciberamenzas en tiempo real" rel="noopener">cybermap.kaspersky.com/es</a> hay muchísima información interesante. Analízala atendiendo a las siguientes cuestiones:</p>
+<p style="text-align: center;"><iframe width="600" height="602" src="https://cybermap.kaspersky.com/es/widget/dynamic/dark"></iframe></p>
+<ul>
+<li style="text-align: left;">¿Qué tipos de ataques se representan?&nbsp; Defínelos.</li>
+<li>Números de ataques de cada tipo.</li>
+<li>5 Países más infectados hoy, ¿por qué esos países son los más atacados?.</li>
+<li>¿En qué puesto está España?</li>
+<li>Observa las estadísticas POR PAÍS&nbsp; en el mes pasado, ¿por que tienen una distribución periódica?.&nbsp;</li>
+</ul>
+<figure class="exe-figure exe-image position-center" style="width: 300px; text-align: center;"><a href="../content/resources/grafico_ataques.PNG" rel="lightbox"><img src="../content/resources/grafico_ataques.PNG" alt="Gráfica de ataques" style="display: block; margin-left: auto; margin-right: auto;" width="300" hspace="auto" height="98"></a>
+<figcaption class="figcaption"><span class="title"><em>Clic para aumentar</em></span></figcaption>
+</figure>
+<p><strong>La tarea:&nbsp;</strong><strong>Contesta a todas las cuestiones planteadas</strong> para realizar una puesta en común en el aula. Presenta los resultados en el formato que te indique tu profesor/a. (Editor de texto, tabla, presentación, plataforma,..)</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>Un poco de ayuda</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Para que te orientes donde buscar la información:</p>
+<ul>
+<li>Tipos de ataques --> definición en FUENTES DE INFORMACIÓN.</li>
+<li>Números de ataques --> en ESTADÍSTICAS.</li>
+<li>5 Paises más infectados hoy, -> en ESTADÍSTICAS.-</li>
+<li>Observa las <strong>estadísticas por país</strong>&nbsp; en el mes pasado, ¿por qué tienen una distribución periódica? --> Quizás tenga algo que ver con las fechas.</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2><span class="sr-av">Clavis dice </span>¿Te has sorprendido?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Una buena estrategia para asegurar el aprendizaje es <strong>repasar</strong> todo lo aprendido durante la realización de las tareas, reconociendo los elementos más destacados o relevantes y conectándolos con aprendizajes anteriores.</p>
+<p>Es por eso que te invito a que, tras esta última actividad, <strong>reflexiones</strong> sobre lo que has <strong>aprendido</strong> en tu exploración:</p>
+<ol>
+<li>¿Te ha sorpendido la cantidad de ataques que se producen constantemente?</li>
+<li>¿Realmente crees que tus datos y contraseñas no están en peligro?</li>
+<li>¿Has aprendido cómo mejorar la seguridad de tus datos?</li>
+<li>¿Has aprendido a crear contraseñas más seguras?</li>
+</ol></div></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/52-pruebas-de-pentesting.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/61-ingenieria-social.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>
